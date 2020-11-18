@@ -1,0 +1,45 @@
+{
+  "name": "cli-pos",
+  "version": "1.0.0",
+  "description": "CLI POS application for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [],
+  "author": "Ludvig Lindqvist <ludvig.lindqvist.rovira@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/luli92/cli-pos#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luli92/cli-pos.git"
+  },
+  "bin": {
+    "store": "index.js"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "verbose": true,
+    "testEnvironment": "jest-environment-node"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "esm": "^3.2.25",
+    "lowdb": "^1.0.0",
+    "minimist": "^1.2.5",
+    "mock-stdin": "^1.0.0",
+    "store": "file:../../../../usr/local/lib/node_modules/store"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  }
+}
